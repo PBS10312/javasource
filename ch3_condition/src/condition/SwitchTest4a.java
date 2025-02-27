@@ -11,7 +11,7 @@ public class SwitchTest4a {
 
         // 사용자가 내는 가위 바위 보 결정
         Scanner scanner = new Scanner(System.in);
-        System.out.println("가위 바위 보 중 하나 입력");
+        System.out.println("가위(1) 바위(2) 보(3) 중 하나 입력");
         String input = scanner.nextLine();
         int user = Integer.parseInt(input);
 
