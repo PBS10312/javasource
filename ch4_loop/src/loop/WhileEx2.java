@@ -31,11 +31,12 @@ public class WhileEx2 {
         System.out.println();
 
         // if 없이 짝수 만들기 , i+=2 : i=i+2
-        for (int i = 2; i < 11; i+=2)
+        i = 2;
         while (i < 11) {
             System.out.println(i+"   ");
-            i+=2
+            i+=2;
         }
+        System.out.println();
 
     }
 }
