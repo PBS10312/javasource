@@ -1,0 +1,42 @@
+package oop;
+
+// OOP(Object Oriented Programing - 객체지향)
+// 장점 : 재사용성이 높다 , 코드의 관리가 쉽다 , 신뢰성이 높은 프로그램을 작성 할수있다
+
+// 자바의 기본코드는 클래스이다
+//                    ㄴ 객체 정의, 설계도, 틀 
+// 클래스 용도: 객체 생성 
+
+// 객체 : 사물, 개념
+
+// 붕어빵 기계(클래스) - 붕어빵 (객체)
+
+//  객체와 인스턴스 
+// 인스턴스 : 어떤 클래스로부터 만들어진 객체 
+// 책상은 책상 클래스의 인스턴스다
+
+public class ClassEx1 {
+    public static void main(String[] args) {
+        // 인스턴스 생성
+        // 클래스명 변수명 = new 클래스명();
+        Tv tv = new Tv(); // 선언하면 heap 에 생성
+        Tv tv2 = new Tv();
+
+        // 속성확인
+        System.out.println(tv); // oop.Tv@5ca881b5 => Tv [size=0, color=null, channel=0, volume=0, power=false]
+        System.out.println(tv2); // oop.Tv@24d46ca6
+
+        // 인스턴스 사용
+        tv.color = "black";
+        tv.channelUp();
+        System.out.println("현재 채널 : " + tv.channel);
+        System.out.println("색상 : " + tv.color);
+
+        // 메소드 : ()
+        tv2.power(); // 메소드 호출(메소드를 실행시켜줌)
+        tv2.channel = 8;
+        tv2.volume = 22;
+        System.out.println(tv2);
+
+    }
+}
