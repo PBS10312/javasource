@@ -7,9 +7,9 @@ public class Account {
     // ㅅ생성자 (default,멤버변수 3개 초기화)
     // toString
 
-    String ano;
-    String owner;
-    long balance;
+    private String ano;
+    private String owner;
+    private long balance;
 
     public Account() {
     }
@@ -20,6 +20,18 @@ public class Account {
         this.balance = balance;
     }
 
+    public String getAno() {
+        return ano;
+    }
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public long getBalance() {
+        return balance;
+    }
+
     // 기능 : 예금하다 +(잔액 = 잔액 +예금액) , 출금하다 - (잔액 = 잔액 -출금액)
     // deposit , withdraw
 
@@ -28,6 +40,9 @@ public class Account {
     }
 
     void withdraw(long num) {
+        // 인출액이 잔액보다 적을때
+        if (num > balance)
+            return;
         this.balance -= num;
     }
 

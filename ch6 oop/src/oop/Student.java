@@ -4,12 +4,12 @@ public class Student {
     // 멤버 변수, 멤버 메소드, 생성자,
 
     // 속성 : 학번(s10312),이름(박병선),학년(2),반(7),전화번호(010-3456-1234),이메일(mobilk@naver.com)
-    String stuId;
-    String name;
-    int grade;
-    int classNum;
-    String phone;
-    String email;
+    private String stuId;
+    private String name;
+    private int grade;
+    private int classNum;
+    private String phone;
+    private String email;
 
     // 생성자 : 개발자가 명시하지 않으면 컴파일러가 자동으로 default 생성자 만들어 줌
     // 클래스명 (){}
@@ -33,6 +33,30 @@ public class Student {
     public Student(int grade, int classNum) {
         this.grade = grade;
         this.classNum = classNum;
+    }
+
+    public String getStuId() {
+        return stuId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public int getClassNum() {
+        return classNum;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     // 기능 : 전화번호를 변경한다, 이메일을 변경한다,학년을 변경, 반을 변경

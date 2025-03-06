@@ -9,8 +9,8 @@ public class PrimitiveParamEx {
         Data d = new Data();
         d.x = 100;
         System.out.println("main() : x = " + d.x);
-        // change(d.x);
-        change2(d);
+        change(d.x); // 값 복사
+        change2(d); // 주소 복사
         System.out.println("After change() ");
         System.out.println(d.x);
 
@@ -26,6 +26,6 @@ public class PrimitiveParamEx {
 
     static void change2(Data d) {
         d.x = 10000;
-        System.out.println("change() : d.x = " + d.x);
+        System.out.println("change2() : d.x = " + d.x);
     }
 }
