@@ -1,0 +1,29 @@
+java.lang 패키지
+1. Object 
+   ㄴ모든 클래스의 최고 조상 
+   ㄴ equals() : 부모는 주소 값 비교인데 재정의를 통해 값 비교 변경가능
+   ㄴ toString() : 멤버 변수 값 출력 용도로 재정의
+
+
+2. toString
+   ㄴ 문자열을 다루기 위한 클래스
+       ㄴ String str1 = "";    <- 재사용 개념
+       ㄴ String str1 = new String("안녕하세요");  <- 새로운 인스턴스를 매번 할당
+           ㄴ 둘의 저장 공간이 다름
+
+   ㄴ 변경이 불가능한(immutable) 클래스
+   ㄴ 주요 메소드
+      ㄴ length() 문자열 길이
+      ㄴ charAt(index) 인덱스에 해당하는 문자 출력
+      ㄴ indexOf("") 문자열 포함여부에 따라 인덱스 반환
+      ㄴ lastIndexOf("") 문자열 포함여부 따라 인덱스 반환(뒤에서 앞으로)
+      ㄴ contains(") 문자열 포함 여부에 따라 true/false 반환
+      ㄴ toCharArray() 문자열 => char 배열
+      ㄴ equals("") 문자열 비교
+      ㄴ equalsIgnoreCase("") 대소문자 구분없이 문자열 비교인데
+      ㄴ concat("") 문자열 연결
+      ㄴ endWith("") 지정된 문자열로 종료 하느냐?
+      ㄴ strartWith("") 지정된 문자열로 시작 하느냐?
+      ㄴ replace("원본","변경") 원본 찾아서 변경할 문자열로 전체변경
+      ㄴ replaceAll("원본","변경") 원본(정규식 사용 가능) 찾아서 변경할 문자열로 전체변경
+      ㄴ replaceFirst("원본","변경") 원본 찾아서 변경할 문자열로 처음만변경
