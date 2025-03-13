@@ -27,3 +27,26 @@ java.lang 패키지
       ㄴ replace("원본","변경") 원본 찾아서 변경할 문자열로 전체변경
       ㄴ replaceAll("원본","변경") 원본(정규식 사용 가능) 찾아서 변경할 문자열로 전체변경
       ㄴ replaceFirst("원본","변경") 원본 찾아서 변경할 문자열로 처음만변경
+
+
+3. StringBuilder , StringBuffer
+   ㄴ 문자열을 다루기 위한 클래스
+   ㄴ 변경이 가능한 클래스임 
+
+StringBuffer - 부모에게 상속받음
+ㄴ 멀티 스레드 지원
+
+StringBuilder
+ㄴ 단일 스레드 지원 , Buffer 보다 빠름
+
+
+4. Math
+   ㄴ 기본적인 수학 계산에 유용한 메서드를 가지고 있다
+   ㄴ 모든 메서드가 static 임
+   ㄴ 상수만 존재함
+
+
+5. 래퍼(Wrapper) 클래스
+   ㄴ 기본형을 객체로 다루기 위한 클래스임
+      ㄴ int => Integer , long => Long , float => Float
+      ㄴ char => Character , boolean => Boolean
