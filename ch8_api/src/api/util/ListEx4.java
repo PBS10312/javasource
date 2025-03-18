@@ -19,6 +19,7 @@ public class ListEx4 {
         for (String string : list) {
             System.out.println(string);
         }
+        System.out.println("---------------------");
 
         System.out.println(list.get(3));
         System.out.println(list.remove(1));

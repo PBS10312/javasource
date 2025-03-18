@@ -27,6 +27,11 @@ java.lang 패키지
       ㄴ replace("원본","변경") 원본 찾아서 변경할 문자열로 전체변경
       ㄴ replaceAll("원본","변경") 원본(정규식 사용 가능) 찾아서 변경할 문자열로 전체변경
       ㄴ replaceFirst("원본","변경") 원본 찾아서 변경할 문자열로 처음만변경
+      ㄴ subString() : 새로운 문자열 반환
+      ㄴ split() : 지정한 문자열로 분리(배열로 반환)
+      ㄴ toLowerCase() / toUpperCase() : 대소문자 변경
+      ㄴ valueOf() : 다른 타입을 문자열로 변경
+      ㄴ trim() : 공백제거
 
 
 3. StringBuilder , StringBuffer

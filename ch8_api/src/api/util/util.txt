@@ -18,6 +18,38 @@ Date 클래스
        ㄴ 구현 클래스 : ArrayList , LInkedList , Stack , Queue................
           ㄴ ArrayList 는 배열 
           ㄴ LInkedList 리스트를 링크로 연결
+          ㄴ 순차적으로 추가및 삭제는 ArrayList가 LInkedList보다 빠름 (단. ArrayList의 저장공간이 넉넉해야함)
+          ㄴ 중간데이터를 추가및 삭제는 LInkedList가 ArrayList보다 빠르다.
+          ㄴ Stack은 LIFO (Last In First Out) 구조이다
+              ㄴ 수식계산할때 , undo / redo , 브라우저 전페이지 앞페이지 할때 
+          ㄴ Queue는 FIFD (First In First Out) - buffer , 최근사용문서
   
-  ㄴ Set 
+  
+-Set
+ ㄴ 중복된 요소를 저장하지 않는다
+ ㄴ 순서를 고정하지 않음 
+ ㄴ LinkedHasSet 순서유지 + 중복된 요소를 저장x
+ ㄴ HasSet 해싱이 적용    
+ ㄴ equals() + hashCode() 가 ture 이면 중복된 요소로 처리
+ ㄴ 사용자가 만든 객체에서는 중복을 제거해주진 않는다
+ ㄴ TreeSet 은 중복요소 안담고 정렬기능 제공 
 
+ -Map 
+  ㄴ collerction과 부모가 다름 자식이 아님
+  ㄴ K(key) , V(value) 구조 사용 
+      ㄴ K 만 중복 아니면된다 
+  ㄴ HashMap
+  ㄴ TreeMap
+
+  -Iterator
+   ㄴ 컬렉션에 저장된 요소들을 읽어오는 방법에 대한 표준화
+   ㄴ List나 Set  데이터를 읽어오는 방법과 Map 데이터를 읽어오는 방법이 서로 다름
+   ㄴ hasNext() , next() , remove() 
+
+
+   -Arrays
+   ㄴ 배열과 관련된 유용한 메소드 제공 
+   ㄴ Arrays.toString(args); 은 배열값 출력
+   ㄴ Arrays.asList(""); 은 배열을 리스트로 변환
+   ㄴ 정렬
+   ㄴ 검색 
