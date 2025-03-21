@@ -6,10 +6,10 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
+@ToString // ToString 메소드 생성
+@AllArgsConstructor // 멤버변수 전부 선택해서 생성자
+@NoArgsConstructor // default 생성자
+@Getter // 게터 세터 생성
 @Setter
 
 public class Account {
